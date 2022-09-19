@@ -1,4 +1,5 @@
 package com.chinmay.bhide.util;
+import java.util.*;
 import java.lang.reflect.*;
 import java.io.*;
 public class SetterGetterGenerator{
@@ -18,7 +19,7 @@ public class SetterGetterGenerator{
 			Class c = Class.forName(className);
 			Field fields[]  = c.getDeclaredFields();
 			Field field;
-			TMList<String> list = new TMArrayList<String>();
+			List<String> list = new ArrayList<String>();
 			String setterName;
 			String getterName;
 			String tmp;
