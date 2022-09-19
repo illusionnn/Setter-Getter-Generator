@@ -62,7 +62,7 @@ public class SetterGetterGenerator{
 			File file = new File("tmp.tmp");
 			if(file.exists()) file.delete();
 			RandomAccessFile randomAccessFile = new RandomAccessFile(file,"rw");
-			TMIterator<String> iterator = list.iterator();
+			Iterator<String> iterator = list.iterator();
 			while(iterator.hasNext()){
 				line = iterator.next();
 				randomAccessFile.writeBytes(line+"\r\n");
